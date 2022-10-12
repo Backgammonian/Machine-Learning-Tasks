@@ -1,5 +1,5 @@
 # Machine-Learning-Tasks
-Tasks completed during Machine Learning course.
+Tasks done by me during Machine Learning course.
 * Classification
 * Image classification (+ augmentation)
 * Ensembles
