@@ -5,3 +5,4 @@ Tasks done by me during Machine Learning course.
 * Ensembles
 * Clustering
 * Regression
+* LSTM
