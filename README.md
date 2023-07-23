@@ -1,5 +1,5 @@
 # Machine-Learning-Tasks
-A set of various tasks done by me during Machine Learning course (2021-2022).
+A set of various machine learning problems solved by me.
 * Classification
 * Image classification (+ augmentation)
 * Ensembles
