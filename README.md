@@ -6,3 +6,4 @@ A set of various machine learning problems solved by me.
 * Clustering
 * Regression
 * LSTM
+* PCA
