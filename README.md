@@ -1,7 +1,7 @@
 # Machine-Learning-Tasks
-A set of various machine learning problems solved by me.
+A set of various machine learning tasks and techniques researched by me.
 * Classification
-* Image classification (+ augmentation)
+* Image recognition (+ augmentation)
 * Ensembles
 * Clustering
 * Regression
