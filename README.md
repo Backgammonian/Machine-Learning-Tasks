@@ -1,5 +1,5 @@
 # Machine-Learning-Tasks
-A set of various machine learning tasks done by me.
+A bunch of various machine learning tasks done by me.
 * Classification
 * Image recognition & augmentation (Keras, PyTorch)
 * Ensembles
@@ -7,3 +7,4 @@ A set of various machine learning tasks done by me.
 * Regression
 * LSTM
 * PCA
+* Time series
