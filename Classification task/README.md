@@ -1,5 +1,6 @@
 # Adult census income dataset
 The goal is to predict whether income exceeds $50K per year based on census data.
+![income by age](income_by_age.png)
 
 ## Key points of the project:
 * Dataset overview and analysis
