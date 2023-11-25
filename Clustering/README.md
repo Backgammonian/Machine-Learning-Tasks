@@ -1,6 +1,6 @@
 # California housing clustering
 The goal of project is to group the houses in California into a prestige groups according to their location, housing age, value and ocean proximity.
-
+![housing](housing ocean proximity.jpg)
 Key steps of the project:
 * Dataset exploration using charts & statistical indicators
 * Dataset preprocessing (standardization, encoding for non-numeric features)
@@ -9,7 +9,7 @@ Key steps of the project:
 
 # Youtube channels categories clustering
 The task is to group Youtube channels into various categories (music, entertainment, education, etc) according to their uploads, video views and subscribers.
-
+![channels](youtube channels categories.jpg)
 Key steps of this project are mostly the same as above apart from extended set of clustering metrics.
 
 # Self-organizing maps
