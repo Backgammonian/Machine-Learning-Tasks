@@ -7,14 +7,14 @@ It means that ML & DL algorithms should learn not just patterns from the data bu
 ## Weather temperature prediction
 
 An attempt to predict weather temperature using its historical values and seasonality.\
-The dataset is provided by [https://www.kaggle.com/datasets/muthuj7/weather-dataset](https://www.kaggle.com/datasets/muthuj7/weather-dataset) from Kaggle.
+The data is provided by [weather dataset](https://www.kaggle.com/datasets/muthuj7/weather-dataset) from Kaggle.
 
 The key steps of the project:
 * Dataset lookup & visual analysis
 * Autocorrelation & partial autocorrelation charts
 * Preprocessing (index sorting, filling missing values)
 * Time features engineering
-* Cross-validation for time series on ML models and neural networks (including NNs with recurrent layers)
+* Cross-validation for time series using ML & DL regression models (including NNs with recurrent layers)
 
 Main conclusions:
 * Ensembles & neural networks perform very well on this dataset (in regards to (R)MSE, MAE, R2 metrics)
@@ -24,3 +24,13 @@ Main conclusions:
 ![weather_mape](weather_mape.png)
 
 ## Hourly energy consumption prediction
+
+The prediction of electricity consumption of PJM West.\
+The data is provided by [hourly energy consumption dataset](https://www.kaggle.com/datasets/robikscube/hourly-energy-consumption) from Kaggle.
+
+The key steps of this project are the same as above but with addition of one step:
+* Cross-validation for time series using ML & DL *classification* models i.e. prediction of whether the value of the target variable will go up or down
+
+![energy_mse](energy_mse.png)
+![energy_mape](energy_mape.png)
+![energy_precision](energy_precision.png)
