@@ -9,8 +9,8 @@ It has various applications such as exploratory data analysis, pattern recogniti
 
 Key steps of the projects:
 * Dataset preprocessing
-* Training of two different neural networks using original and dimensionally reduced datasetы in order to compare their performance
-* When using MNIST dataset in both cases accuracy is pretty much the same (~0.96)
+* Training of two different neural networks using original and dimensionally reduced datasets in order to compare their performance
+* When using MNIST dataset in both cases the accuracy metric stays the same (~0.96)
 * When using synthetic dataset after applying PCA the accuracy metric drops dramatically (from ~0.92 to ~0.63)
 * Decision region chart for synthetic dataset
 
