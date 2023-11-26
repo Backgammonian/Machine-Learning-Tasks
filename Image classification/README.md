@@ -23,7 +23,7 @@ In this dataset there are 9 classes of different mushroom genuses (Agaricus, Ama
 
 Key steps of the project:
 * Remove all monochrome images from the dataset. The color of each type of mushroom is pretty important for a proper classification
-* Add augmented images to the dataset in order to balance out data classes. After such manipulation dataset consists of ~23k images (or 2.5k for each class)
+* Add augmented images to the dataset in order to balance out data classes. After such manipulation dataset consists of ~23k images (or 2.5k for each class) of size 128x128x3 each
 * Create CNN w/ augmentations and train it. Accuracy on test: ~0.75 (not very good)
 * Create neural network w/ augmentations and transfer learning layers (VGG19), train the network for a while, unfreeze transfer layers and train the network again for a bit. Accuracy on test: ~0.85 (which is better)
 * Validate both models using the images from the Internet (and also from cellphone camera). Sadly the results are not as impressing as during tests (~0.45 accuracy).
@@ -34,5 +34,11 @@ Main conclusions:
 
 Example of transfer learning model's confusion matrix on testing data:
 ![mushroom_perf](mushroom_perf.png)
-Examples of mushroom images classification:
-
+Examples of mushroom images classification results:
+![mushroom_1](mushroom_1.png)
+![mushroom_2](mushroom_2.png)
+![mushroom_3](mushroom_3.png)
+![mushroom_4](mushroom_4.png)
+![mushroom_5](mushroom_5.png)
+![mushroom_6](mushroom_6.png)
+![mushroom_7](mushroom_7.png)
