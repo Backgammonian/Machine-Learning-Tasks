@@ -1,5 +1,8 @@
 # IMDb reviews classification using LSTM (Keras)
-This is an educational project of natural language classification based on IMDb reviews dataset.
+
+This is an educational project of natural language classification.\
+It utilizes the IMDb reviews dataset.\
+Main reason of using LSTM layers instead of fully-connected layers is the ability of LSTM to process sequences of data. It means that LSTM is capable of learning from relative positions of words and their role in the text.
 
 Key features of the project:
 * Dataset lookup
@@ -8,6 +11,7 @@ Key features of the project:
 * Performing predictions on a test dataset (~0.85 accuracy)
 
 ## Showcase of predictions
+
 (10702) ---------------\
 Original review text: "I'm a huge fan of Ivan Reitman-I loved Evolution and who didn't like Ghostbusters? From the trailer you already know that Uma's character will get dumped by Luke's.So the build-up is obviously towards the moment when she unleashes her superpowers on him.But the pay-off is just not there.The shark tossing did manage to get a (slight) giggle but once again, it was all in the trailer. No one does breathless quite like Uma and Luke is diet Owen on his good days.If not for Riann Wilson you would sit there with a constipated smile until your cheeks start to cramp.This is a comedy,right?  It's not awful-it just sits there like a stale cracker behind the fridge.This could have been such a brilliant send-up of Superhero movies and Feminism but fails on both counts.Let's see if Jason Reitman can salvage the family name."\
 Original sentiment: negative\
