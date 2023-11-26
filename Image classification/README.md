@@ -31,11 +31,12 @@ Key steps of the project:
 Main conclusions:
 * Mushrooms of same kind can vary massively in shapes, sizes and colors
 * For higher accuracy models need to be trained using much more data including pictures from different angles, in different time of day etc.
+* Based on this project a [MyShroom-Classifier-App](https://github.com/Backgammonian/MyShroom-Classifier-App) was created.
 
 Example of transfer learning model's confusion matrix on testing data:
 ![mushroom_perf](mushroom_perf.png)
 
-Examples of mushroom images classification results:
+## Examples of mushroom images classification results:
 ![mushroom_1](mushroom_1.png)
 ![mushroom_2](mushroom_2.png)
 ![mushroom_3](mushroom_3.png)
