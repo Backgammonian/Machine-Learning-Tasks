@@ -34,6 +34,7 @@ Main conclusions:
 
 Example of transfer learning model's confusion matrix on testing data:
 ![mushroom_perf](mushroom_perf.png)
+
 Examples of mushroom images classification results:
 ![mushroom_1](mushroom_1.png)
 ![mushroom_2](mushroom_2.png)
