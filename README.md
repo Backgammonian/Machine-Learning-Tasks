@@ -1,10 +1,7 @@
 # Machine-Learning-Tasks
 A bunch of various machine learning tasks done by me.
 * Classification
-* Image recognition & augmentation (Keras, PyTorch)
-* Ensembles
+* Regression & Time series
 * Clustering
-* Regression
-* LSTM
 * PCA
-* Time series
+* Image recognition & augmentation (using Keras, PyTorch)
