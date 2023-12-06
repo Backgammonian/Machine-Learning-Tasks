@@ -1,13 +1,15 @@
 # Random Russian quotes generation (Keras)
 This is an educational project of natural language generation.
-The text dataset is composed of quotes parsed from [citaty.info](https://citaty.info/) site and [Russian "gang" quotes](https://www.kaggle.com/datasets/egoluback/russian-gang-quotes) from Kaggle.
+The training dataset consists of quotes parsed from [citaty.info](https://citaty.info/) site and from [Russian "gang" quotes](https://www.kaggle.com/datasets/egoluback/russian-gang-quotes) Kaggle dataset.
 
 Key steps of the project:
 * Multithread Web-parsing of quotes in order to collect them in a single file
 * Text data preprocessing and vectorization
 * Building and testing of LSTM-based neural network for generating natural language based on specified input sentence
 
-## Showcase of web-scraping results:
+## Showcase of web-scraping results
+
+Distribution of quotes authors/sources:
 
 ![parsing-results](parsing-results.png)
 
@@ -37,3 +39,4 @@ Generated text: "чтобы стать самым счастливым чело�
 у кручаем жизущким вядолет. смиранные и бердуевствий женщине все будет, же травают себя он моворостивля зо преупесным все занямение,  — сколько с делее? — бугу. значин: как застаневием и ожидека живощность таково), кто из-зро.
 след"
 
+Conclusion: that's just gibberish lol
