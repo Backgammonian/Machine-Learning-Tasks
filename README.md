@@ -5,3 +5,4 @@ A bunch of various machine learning tasks done by me.
 * Clustering
 * PCA
 * Image recognition & augmentation (using Keras, PyTorch)
+* Simple text generation
