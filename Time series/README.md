@@ -1,6 +1,6 @@
 # Time series forecasting
 
-The main goal of these projects is to learn about forecasting techniques upon time series.\
+The main goal of these projects is to learn about time series forecasting techniques.\
 The difference between regression analysis and time series forecasting is the ordering of data along the time axis.\
 It means that ML & DL algorithms should learn not just patterns from the data but also trends, seasonality and cyclicity of time series.
 
@@ -17,8 +17,8 @@ The key steps of the project:
 * Cross-validation for time series using ML & DL regression models (including NNs with recurrent layers)
 
 Main conclusions:
-* Ensembles & neural networks perform very well on this dataset (in regards to (R)MSE, MAE, R2 metrics)
-* I've noticed that dummy regressor (basically just a straight line) gives the best MAPE result compared to the rest of models what is kind of strange
+* Ensembles & neural networks perform very well on this dataset (according to MSE, RMSE, MAE, R2 metrics)
+* I've noticed that dummy regressor (basically just a straight line) gives the best MAPE result compared to the rest of models what is kind of strange. Maybe because it's the mean value of the testing data?
 
 ![weather_mse](weather_mse.png)
 ![weather_mape](weather_mape.png)
@@ -34,3 +34,20 @@ The key steps of this project are the same as above but with addition of one ste
 ![energy_mse](energy_mse.png)
 ![energy_mape](energy_mape.png)
 ![energy_precision](energy_precision.png)
+
+## Russian day-ahead wholesale electricity market price forecasting
+
+Attempt to use regression and ML algorithms in order to accurately predict the future hourly values of electricity price of Russian wholesale day-ahead electricity market on 2nd price zone.\
+The data is provided by the [administrator of the trading system (rus. АО «АТС»)](https://www.atsenergo.ru/results/rsv/index?zone=1)
+
+The key steps of the project:
+* Data parsing
+* Index preprocessing & time features engineering
+* Dataset lookup & visual analysis
+* 10-fold time series cross-validation
+
+Main conclusion:
+* Popular ML models can't accurately predict prices of Russian day-ahead electricity market because of high variance. Also regression models can't give accurate prediciton because of high bias. 
+* Further investigation of the topic of accurate electricity price forecasting is needed.
+
+![electricity price forecasting results](electricity price forecasting results.png)
