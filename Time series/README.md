@@ -50,4 +50,4 @@ Main conclusion:
 * Popular ML models can't accurately predict prices of Russian day-ahead electricity market because of high variance. Also regression models can't give accurate prediciton because of high bias. 
 * Further investigation of the topic of accurate electricity price forecasting is needed.
 
-![electricity price forecasting results](electricity price forecasting results.png)
+![electricity_price_forecasting_results](electricity_price_forecasting_results.png)
