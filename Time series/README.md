@@ -37,17 +37,21 @@ The key steps of this project are the same as above but with addition of one ste
 
 ## Russian day-ahead wholesale electricity market price forecasting
 
-Attempt to use regression and ML algorithms in order to accurately predict the future hourly values of electricity price of Russian wholesale day-ahead electricity market on 2nd price zone.\
+Attempt to use regression and ML algorithms in order to accurately predict the future hourly values of electricity price on 2nd price zone of Russian wholesale day-ahead electricity market.\
 The data is provided by the [administrator of the trading system (rus. АО «АТС»)](https://www.atsenergo.ru/results/rsv/index?zone=1)
 
 The key steps of the project:
-* Data parsing
-* Index preprocessing & time features engineering
+* Data web-scraping
+* Index & columns preprocessing
+* Time features engineering
 * Dataset lookup & visual analysis
-* 10-fold time series cross-validation
+* Prediction tests using 10-fold time series cross-validation
+
+What price data looks like:
+![energy_mape](energy_mape.png)
 
 Main conclusion:
-* Popular ML models can't accurately predict prices of Russian day-ahead electricity market because of high variance. Also regression models can't give accurate prediciton because of high bias. 
+* Popular regression & ML models can't accurately enough predict the prices on Russian day-ahead electricity market because of high volatility of the prices. 
 * Further investigation of the topic of accurate electricity price forecasting is needed.
 
 The results of models are shown below:
