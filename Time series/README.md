@@ -48,7 +48,9 @@ The key steps of the project:
 * Prediction tests using 10-fold time series cross-validation
 
 What price data looks like:
-![energy_mape](energy_mape.png)
+
+![price_graph](price_graph.png)
+![price_histogram](price_histogram.png)
 
 Main conclusion:
 * Popular regression & ML models can't accurately enough predict the prices on Russian day-ahead electricity market because of high volatility of the prices. 
