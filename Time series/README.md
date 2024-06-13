@@ -58,4 +58,4 @@ Main conclusion:
 
 The results of models are shown below:
 
-![electricity_price_forecasting_results](electricity_price_forecasting_results.png)
+![electricity_price_forecasting_results](electricity_price_forecasting_results_2.png)
