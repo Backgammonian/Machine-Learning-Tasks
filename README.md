@@ -1,9 +1,10 @@
 # Machine-Learning-Tasks
 A bunch of various machine learning tasks done by me.
+This includes:
 * Classification
 * Regression
-* Time series prediction
+* Time series forecasting
 * Clustering
 * PCA
 * Image recognition & augmentation (using Keras, PyTorch)
-* Simple text generation
+* Text generation (simple, character by character)
