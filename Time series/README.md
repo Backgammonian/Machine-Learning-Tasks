@@ -58,7 +58,7 @@ Main conclusion:
 
 The results of models are shown below:
 
-![electricity_price_forecasting_results](electricity_price_forecasting_results_v2_1.png)
+![electricity_price_forecasting_results](electricity_price_forecasting_results_v2_2.png)
 
 And the best results are:
 
