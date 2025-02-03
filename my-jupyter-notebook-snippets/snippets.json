@@ -40,13 +40,13 @@
             "code" : [
                 "import os",
                 "from ipynbcompress import compress",
-                "def compress_notebook(file_in, file_out):",
                 "",
+                "def compress_notebook(file_in, file_out):",
                 "    old_size = os.stat(file_in).st_size / 1024 ** 2",
                 "    new_size = compress(file_in, output_filename = file_out, img_format = 'jpeg')/ 1024 ** 2",
-                "    print(f'Notebook size after optimization is: {new_size:.2f} MB')",
+                "    print(f'Notebook size:\n\t* Before optimization: {old_size:.2f} MB\n\t* After optimization: {old_size - new_size:.2f} MB')",
                 "    decrease_mem_percent = 100 * (old_size - new_size) / old_size",
-                "    print(f'Notebook size has decreased by {decrease_mem_percent:.1f}%')"
+                "    print(f'Notebook size has decreased by {100.0 - decrease_mem_percent:.1f}%')"
             ]
         },
         {
@@ -211,7 +211,7 @@
             ]
         },
         {
-            "name" : "Testing datasets",
+            "name" : "Test datasets",
             "code" : [
                 "from sklearn.preprocessing import LabelEncoder",
                 "from sklearn.datasets import fetch_openml",
@@ -582,14 +582,19 @@
             "code" : [
                 "from sklearn.preprocessing import LabelEncoder",
                 "",
-                "label_encoder = LabelEncoder()",
-                "dataset_encoded = dataset.copy()",
-                "dataset_encoded['column'] = label_encoder.fit_transform(dataset_encoded['column'])",
-                "dataset_encoded",
+                "dataset = dataset_orig.copy()",
+                "one_hot_columns = ['one_hot_column']",
+                "dataset = pd.get_dummies(dataset, columns = one_hot_columns)",
+                "dataset.replace({False: 0, True: 1}, inplace = True)",
+                "#dataset",
                 "",
-                "dataset_encoded = pd.get_dummies(dataset, columns = ['column'])",
-                "dataset_encoded.replace({False: 0, True: 1}, inplace = True)",
-                "dataset_encoded"
+                "label_encoder = LabelEncoder()",
+                "columns_to_scale = ['column']",
+                "dataset[columns_to_scale] = label_encoder.fit_transform(dataset[columns_to_scale])",
+                "#dataset",
+                "",
+                "dataset[columns_to_scale] = label_encoder.inverse_transform(dataset[columns_to_scale])",
+                "#dataset"
             ]
         },
         {
