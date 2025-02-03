@@ -1,6 +1,8 @@
-/*This file contains any manual css for this page that needs to override the global styles.
+/*
+This file contains any manual css for this page that needs to override the global styles.
 This is only required when different pages style the same element differently. This is just
-a hack to deal with our current css styles and no new styling should be added in this file.*/
+a hack to deal with our current css styles and no new styling should be added in this file.
+*/
 
 #ipython-main-app {
     position: relative;
@@ -12,8 +14,8 @@ a hack to deal with our current css styles and no new styling should be added in
 /*
 Custom theme for Jupyter Notebook inspired by the dark theme from Visual Studio
 1. Run: jupyter --config
-(Example: C:\Users\[username]\.jupyter)
-Put text below in file .jupyter\custom\custom.css
+    Example: C:\Users\[username]\.jupyter
+2. Put text below in file .jupyter\custom\custom.css
 */
 
 body {
@@ -391,5 +393,9 @@ div.output_stderr {
 
 .notification_widget[disabled]:active {
     color: #006EFF;
+    background-color: #101010;
+}
+
+span.save_widget span.filename:hover {
     background-color: #101010;
 }
