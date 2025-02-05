@@ -44,7 +44,7 @@
                 "def compress_notebook(file_in, file_out):",
                 "    old_size = os.stat(file_in).st_size / 1024 ** 2",
                 "    new_size = compress(file_in, output_filename = file_out, img_format = 'jpeg')/ 1024 ** 2",
-                "    print(f'Notebook size:\n\t* Before optimization: {old_size:.2f} MB\n\t* After optimization: {old_size - new_size:.2f} MB')",
+                "    print(f'Notebook size:\\n\\t* Before optimization: {old_size:.2f} MB\\n\\t* After optimization: {old_size - new_size:.2f} MB')",
                 "    decrease_mem_percent = 100 * (old_size - new_size) / old_size",
                 "    print(f'Notebook size has decreased by {100.0 - decrease_mem_percent:.1f}%')"
             ]
