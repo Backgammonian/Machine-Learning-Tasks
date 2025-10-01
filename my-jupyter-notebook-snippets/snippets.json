@@ -104,18 +104,22 @@
             "code" : [
                 "import numpy as np",
                 "import pandas as pd",
+                "import matplotlib.pyplot as plt",
+                "import seaborn as sns",
+                "import missingno as msno",
+                "import random",
+                "",
                 "pd.set_option('display.max_rows', 50)",
                 "pd.set_option('display.max_columns', 10)",
-                "import matplotlib.pyplot as plt",
-                "import seaborn as sb",
-                "import missingno as msno",
-                "import random as rd"
+                "",
+                "SEED = 42",
+                "np.random.seed(SEED)",
+                "random.seed(SEED)"
             ]
         },
         {
             "name" : "ML",
             "code" : [
-                "from sklearn.metrics import confusion_matrix, classification_report",
                 "from sklearn.preprocessing import MinMaxScaler, StandardScaler, LabelEncoder",
                 "from sklearn.model_selection import train_test_split",
                 "# Classification",
@@ -136,6 +140,7 @@
                 "from sklearn.naive_bayes import GaussianNB",
                 "from catboost import CatBoostClassifier",
                 "from xgboost import XGBClassifier",
+                "from sklearn.metrics import confusion_matrix, classification_report",
                 "# Regression",
                 "from sklearn.neighbors import KNeighborsRegressor",
                 "from sklearn.linear_model import LinearRegression",
@@ -148,9 +153,9 @@
                 "from catboost import CatBoostRegressor",
                 "from xgboost import XGBRegressor",
                 "from sklearn.model_selection import GridSearchCV",
-                "from sklearn.metrics import r2_score",
-                "from sklearn.metrics import mean_absolute_error",
-                "from sklearn.metrics import mean_squared_error"
+                "from sklearn.metrics import r2_score as R2",
+                "from sklearn.metrics import mean_absolute_error as MAE",
+                "from sklearn.metrics import mean_squared_error as MSE"
             ]
         },
         {
@@ -582,19 +587,22 @@
             "code" : [
                 "from sklearn.preprocessing import LabelEncoder",
                 "",
-                "dataset = dataset_orig.copy()",
+                "# one-hot encoding",
+                "df = df_orig.copy()",
                 "one_hot_columns = ['one_hot_column']",
-                "dataset = pd.get_dummies(dataset, columns = one_hot_columns)",
-                "dataset.replace({False: 0, True: 1}, inplace = True)",
-                "#dataset",
+                "df = pd.get_dummies(df, columns = one_hot_columns)",
+                "df.replace({False: 0, True: 1}, inplace = True)",
+                "#df",
                 "",
+                "# label encoding",
                 "label_encoder = LabelEncoder()",
                 "columns_to_scale = ['column']",
-                "dataset[columns_to_scale] = label_encoder.fit_transform(dataset[columns_to_scale])",
-                "#dataset",
+                "df[columns_to_scale] = label_encoder.fit_transform(df[columns_to_scale])",
+                "#df",
                 "",
-                "dataset[columns_to_scale] = label_encoder.inverse_transform(dataset[columns_to_scale])",
-                "#dataset"
+                "# inverse transformations",
+                "df[columns_to_scale] = label_encoder.inverse_transform(df[columns_to_scale])",
+                "#df"
             ]
         },
         {
@@ -646,7 +654,8 @@
             "code" : [
                 "from sklearn.decomposition import PCA",
                 "",
-                "pca = PCA(n_components = 5)",
+                "n_components = 5",
+                "pca = PCA(n_components = n_components)",
                 "pca_x = pca.fit_transform(x_scaled)",
                 "",
                 "per_var = np.round(pca.explained_variance_ratio_ * 100.0, decimals = 4)",
