@@ -12,10 +12,15 @@ a hack to deal with our current css styles and no new styling should be added in
 }
 
 /*
-Custom theme for Jupyter Notebook inspired by the dark theme from Visual Studio
-1. Run: jupyter --config
-    Example: C:\Users\[username]\.jupyter
-2. Put text below in file .jupyter\custom\custom.css
+Let's ignore the previous statement.
+
+Here's a Custom theme for Jupyter Notebook inspired by the dark theme from Visual Studio.
+
+How to install:
+1. Run in your env: 
+    jupyter --config
+    Output example: C:\Users\username\.jupyter
+2. Put the text below in file: .jupyter\custom\custom.css
 */
 
 body {
@@ -398,4 +403,20 @@ div.output_stderr {
 
 span.save_widget span.filename:hover {
     background-color: #101010;
+}
+
+/*
+Additional styles for the text editor (.py)
+*/
+
+#texteditor-backdrop {
+    background-color: #101010;
+}
+
+.CodeMirror {
+    background: #2B2B2B;
+}
+
+.CodeMirror-gutter {
+    background: #2B2B2B !important; 
 }
