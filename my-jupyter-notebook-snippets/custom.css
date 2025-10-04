@@ -11,6 +11,7 @@ a hack to deal with our current css styles and no new styling should be added in
     position: relative;
 }
 
+
 /*
 Let's ignore the previous statement.
 
@@ -405,8 +406,15 @@ span.save_widget span.filename:hover {
     background-color: #101010;
 }
 
+div.cell.jupyter-soft-selected {
+    border-left-color: #050505;
+    border-right-color: #050505;
+    background: #050505;
+}
+
+
 /*
-Additional styles for the text editor (.py)
+Additional styles for the text editor (tested on .py files)
 */
 
 #texteditor-backdrop {
